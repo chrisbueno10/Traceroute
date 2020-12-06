@@ -80,7 +80,7 @@ def ipToHost(address):
         # Fill in end
     except herror:  # if the host does not provide a hostname
         shortname = address
-        fqdn = "hostname not returnable"
+        fqdn = None
 
     return fqdn
     # Fill in start

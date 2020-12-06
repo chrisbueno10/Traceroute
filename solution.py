@@ -73,7 +73,7 @@ def ipToHost(address):
     try:
         # try to fetch the hostname
         # Fill in start
-        fqdn = socket.gethostbyaddr(address)[0]
+        fqdn = gethostbyaddr(address)[0]
         shortname = fqdn.split('.')[0]
         if fqdn == shortname:
             fqdn = ""

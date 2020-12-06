@@ -98,7 +98,7 @@ def get_route(hostname):
             tracelist2.append(tracelist1)
 
             #Fill in start
-            icmp = socket.getprotobyname("icmp")
+            icmp = getprotobyname("icmp")
             mySocket= socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
             #Fill in end
 

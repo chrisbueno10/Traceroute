@@ -70,17 +70,18 @@ def build_packet():
     packet = header + data
     return packet
 def ipToHost(address):
+
     try:
         # try to fetch the hostname
         # Fill in start
         fqdn = gethostbyaddr(address)[0]
         shortname = fqdn.split('.')[0]
-        if fqdn == shortname:
-            fqdn = ""
+        #if fqdn == shortname:
+          #  fqdn = ""
         # Fill in end
     except herror:  # if the host does not provide a hostname
         shortname = address
-        fqdn = None
+        fqdn = "hostname not returnable"
 
     return fqdn
     # Fill in start
